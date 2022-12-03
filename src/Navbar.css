@@ -1,0 +1,65 @@
+*{
+    margin:0
+}
+.navbar{
+
+    width:100vw;
+    height:90px;
+    position: relative;
+    background-color: transparent;
+}
+.navcontainer{
+    position: absolute;
+   padding-top: 3%;
+   left:30%;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+  width: 220px;
+  height:70px;
+  position:absolute;
+  left:3%;
+  padding-top: 1.5%;
+
+}
+#nv{
+    margin-right: 17%;
+    text-decoration: none;
+    color: black;
+
+
+}
+#nv:hover{
+    cursor: pointer;
+    text-decoration: wavy;
+}
+.buttons{
+    display: inline;
+    position: absolute;
+    padding-top: 2%;
+    right:10%;
+}
+button{
+    cursor: pointer;
+}
+.sign-in{
+    border: none;
+   background-color: transparent;
+   width: 130px;
+   height:50px;
+   display: inline;
+
+
+}
+.sign-up{
+    border: none;
+  background-color: #120647;
+  color:white;
+  border-radius: 4px;
+   width: 130px;
+   height:50px;
+   display: inline;
+
+
+}
