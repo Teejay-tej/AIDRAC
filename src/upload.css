@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap%27');
+
+#buttons{
+  background-image: url("./image/Background2.jpg");
+  height: 90vh;
+  background-position: center;
+  padding-top: 60px;
+  padding-left: 100px;
+  margin: auto;
+  text-align: left;
+  background-size: cover;
+}
+.button{
+  border: none;
+  color: white;
+  padding: 13px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 50px;
+  width: 130px;
+  margin: 50px 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+}
+.button1{
+  background-color: aliceblue; 
+  color: black;
+  border: 2px solid #2D033B;
+  padding: 6px 25px;
+  font-family: 'Coromorant Garamond', serif;
+  width: 300px;
+  border-radius: 8px;
+}
+
+.button1:hover {
+  background-color: #2d033b;
+  color: white;
+}
+

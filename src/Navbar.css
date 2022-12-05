@@ -1,38 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 *{
     margin:0
 }
 .navbar{
 
-    width:100vw;
-    height:90px;
+    height:78px;
     position: relative;
-    background-color: transparent;
+    background-color: #2D033B;
 }
 .navcontainer{
     position: absolute;
-   padding-top: 3%;
-   left:30%;
+   padding-top: 2%;
+   left:65%;
     display: flex;
     flex-direction: row;
+    
+    width: 600px;
+    
 }
 .logo{
-  width: 220px;
-  height:70px;
-  position:absolute;
-  left:3%;
-  padding-top: 1.5%;
+    font-family: 'Abril Fatface', cursive;
+   cursor: pointer;
+    color: white;
+    font-size: 40px;
+    left:3%;
+   top:25%;
+   font-weight: 595;
+    position: absolute;
+    
 
 }
 #nv{
-    margin-right: 17%;
+    margin-right: 10%;
     text-decoration: none;
-    color: black;
+    color: #fff;
+    font-size: 16px;
+
+    padding: 10px;
+    border-radius: 3px;
+    font-family: 'Abril Fatface', cursive;
 
 
 }
 #nv:hover{
     cursor: pointer;
     text-decoration: wavy;
+  
+    background-color: #fff;
+    color: #2D033B;
 }
 .buttons{
     display: inline;

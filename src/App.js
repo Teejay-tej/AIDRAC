@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
 import Home from './Home';
+import Upload from './Upload';
 
 
 import './App.css';
@@ -17,7 +18,9 @@ function App() {
 
     <Route path='/' element={<Home/>}/>
     <Route path='/about' element={<AboutUs/>}/>
-
+    <Route path='/upload' element={<Upload/>}/>
+    
+    
     <Route path="/*" element={<Home/>} />
 
     </Routes>
