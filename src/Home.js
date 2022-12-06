@@ -14,6 +14,7 @@ import {
   HeroP,
   HeroBtn
 } from './index1';
+//import JsonPractice from './JsonPractice';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,6 @@ const Home = () => {
         </HeroItems>
       </HeroContent>
     </HeroContainer>
-    
     
     <Feature/>
     <Footer/>

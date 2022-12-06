@@ -117,7 +117,7 @@ use dual RSA encryption following it with steganography.
 
         <div className='card5'>
         <div className='title'>
-                <p>Publishing</p>
+                <p>Publication</p>
             </div>
             <div className='ieee'></div>
             
