@@ -15,15 +15,16 @@ class Upload extends Component {
    uploadHandler = () => {
       const formData = new FormData()
       formData.append(
-        'myFile',
+        'image',
         this.state.selectedFile,
         this.state.selectedFile.name
       )
       axios.post('http://127.0.0.1:5000/api/extract', formData, {
-        onUploadProgress: progressEvent => {
-          console.log(progressEvent.loaded / progressEvent.total)
-        }
-      })
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      },
+    );
     }
   
 
