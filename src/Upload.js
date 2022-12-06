@@ -1,72 +1,41 @@
-import React from 'react';
-import styled from 'styled-components';
 import './upload.css'
-const Button = styled.button`
-  /* Insert your favorite CSS code to style a button */
+import React, { Component } from "react";
+import axios from 'axios';
 
-`;
-const Upload = props => {
-  const hiddenFileInput = React.useRef(null);
+
+
+class Upload extends Component {
+
+  state = { selectedFile: null }
+
+  fileChangedHandler = event => {
+    this.setState({ selectedFile: event.target.files[0] })
+}
+
+   uploadHandler = () => {
+      const formData = new FormData()
+      formData.append(
+        'myFile',
+        this.state.selectedFile,
+        this.state.selectedFile.name
+      )
+      axios.post('http://127.0.0.1:5000/api/extract', formData, {
+        onUploadProgress: progressEvent => {
+          console.log(progressEvent.loaded / progressEvent.total)
+        }
+      })
+    }
   
-  const handleClick = event => {
-    hiddenFileInput.current.click();
-  };
-  const handleChange = event => {
-    const fileUploaded = event.target.files[0];
-    props.handleFile(fileUploaded);
-  };
-  return (
-    <div id="buttons">
-      <button class="button1" onClick={handleClick}>
-        <h1>Upload</h1>
-      </button>
-      <input type="file"
-             ref={hiddenFileInput}
-             onChange={handleChange}
-             style={{display:'none'}} 
-      /> 
-    </div>
-    
-  );
-};
 
-export default Upload;
-
-/*import React, { useState, useRef } from "react";
-import './upload.css'
-
-const Upload = (props) => {
-  const fileInputField = useRef(null);
-  const [files, setFiles] = useState({});
-
-  return (
-    <input type="file"
-    accept="image/*"
-    style={{ display: 'none' }}
-    id="contained-button-file"
-    />
-    <label htmlFor="contained-button-file">
-        <button variant="contained" color="primary" component="span">
-          Upload
-        </button>
-      </label>
-
-)
-}
-export default Upload;
-
-import React, { useState, useRef } from "react";
-import './upload.css'
-
-const Upload = (props) => {
-  const fileInputField = useRef(null);
-  const [files, setFiles] = useState({});
-
-  return (
-    <div className="upload">
-   <input type="file" ref={fileInputField} />
-   </div>
-  )
+     render() {
+         return(
+             <div className= "upload">
+              <input type="file" onChange={this.fileChangedHandler}/>
+              <button onClick={this.uploadHandler}>Upload!</button>
+             </div>
+         
+         )
+     }
 }
 
-export default Upload;*/
+export default Upload;
