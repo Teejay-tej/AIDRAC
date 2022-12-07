@@ -23,7 +23,7 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to='/'>Copyright protected : Madhu, Meeks, Shrey and Tej only!!XD</SocialLogo>
+            <SocialLogo to='/'>Copyright protected : Madhumitha, Meghana, Shreya, and Tejashree</SocialLogo>
             <SocialIcons>
               <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
                 <FaFacebook />
