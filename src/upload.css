@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap%27');
 
-#buttons{
+#buttons {
   background-image: url("./image/Background2.jpg");
   height: 90vh;
   background-position: center;
@@ -10,7 +10,8 @@
   text-align: left;
   background-size: cover;
 }
-.button{
+
+.button {
   border: none;
   color: white;
   padding: 13px 50px;
@@ -22,10 +23,11 @@
   margin: 50px 20px;
   transition-duration: 0.4s;
   cursor: pointer;
-  
+
 }
-.button1{
-  background-color: aliceblue; 
+
+.button1 {
+  background-color: aliceblue;
   color: black;
   border: 2px solid #2D033B;
   padding: 6px 25px;
@@ -39,3 +41,20 @@
   color: white;
 }
 
+#uploadbtn {
+  width: 250px;
+
+  padding: 30px;
+  background-color: #2D033B;
+  color: aliceblue;
+  font-size: 25px;
+  border-radius: 20px;
+  font-family: 'Coromorant Garamond', serif;
+}
+
+.upload {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+
+}

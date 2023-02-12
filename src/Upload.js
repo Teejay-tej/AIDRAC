@@ -13,6 +13,7 @@ class Upload extends Component {
   }
 
   uploadHandler = () => {
+    alert("Image uploaded successfully !");
     const formData = new FormData()
     formData.append(
       'image',
@@ -33,7 +34,7 @@ class Upload extends Component {
     return (
       <div className="upload">
         <input type="file" onChange={this.fileChangedHandler} />
-        <button onClick={this.uploadHandler}>Upload!</button>
+        <button id="uploadbtn" onClick={this.uploadHandler}>Upload!</button>
       </div>
 
     )
